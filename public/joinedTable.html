@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ 	<meta charset="utf-8">
+    <title>Table Information</title>
+    <link rel="stylesheet" type="text/css" href="table_info.css">
+ </head>
+
+ <body>
+    <!-- <h1>Table Info</h1> -->
+    <div id="topNavBar">
+      <ul>
+         <li>
+            <a href="friends.html">FRIENDS | </a>
+         </li>
+         <li>
+          <a href="account_info.html">ACCOUNT | </a>
+         </li>
+         <li>
+            <a>LOG OUT</a>
+         </li>
+
+      </ul>
+    </div>
+
+
+
+
+ 	<div id=tableInfo>
+      <h2>Table Info</h2>
+      <p>COURSE: <span id="subject">MAT123</span></p>
+         <p>LOCATION: <span id = "location">Bahen</span></p>
+         <p>DESCRIPTION: <span id = "description">
+         Study at BA2210, second row.
+         Working on assignment 2. We are at question 3(a) for now.
+         </span></p>
+         <p>START TIME: <span id ="start"> 17:15</span></p>
+      <p>END TIME: <span id = "end">18:00</span></p>
+         <p class = "userhere">WHO IS HERE NOW:
+             <div id = "User">
+                 <div class = "user">Jack</div>
+                 <div class = "user">Jim</div>
+                 <div class = "user">Jerry</div>
+                 <div class = "user">Tom</div>
+                 (4 people)
+             </div>
+         </p>
+      <p>SEATS AVALIABLE: <span id = "seatsLeft">2</span></p>
+ 	</div>
+
+    <div id="rightButtons">
+         <a >
+            You have joined this table
+         </a>
+         <br>
+         <br>
+         <p id="reminder" class="centerAligned"></p>
+         <br>
+         <a class="buttonA">
+            <button id="backButton" class="buttons" onclick="leaveTable()">LEAVE THIS TABLE</button>
+         </a>
+     </div>
+
+
+
+    <script type="text/javascript" src="joinedTable.js"></script>
+ </body>
+</html>

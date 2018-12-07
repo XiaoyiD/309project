@@ -1,0 +1,88 @@
+
+body {
+	background-color: white;
+	margin: 0;
+	font-family: Helvetica, sans-serif; /* sans-serif browser default */
+}
+
+
+
+#topNavBar {
+	background-color: orange;
+	margin-bottom: 10px;
+	text-align: right;
+	height: 35px;
+}
+
+#topNavBar ul {
+
+	padding: 5px;
+	margin: 0px;
+
+}
+
+#topNavBar ul li {
+	list-style: none; /* No bullet points */
+	display: inline;
+	margin-right: 20px;
+
+}
+
+#topNavBar ul li a{
+   color: white;
+   font-size: 20px;
+	 text-decoration:none
+}
+
+
+#iWanna{
+       	position:absolute;
+       	top: 160px;
+       	left: 130px;
+       	font-size: 50px;
+				text-decoration:none;
+}
+
+#iWanna a{
+     color: black;
+}
+
+#button1{
+     position:absolute;
+     top: 240px;
+     left:130px;
+}
+
+#button2{
+     position:absolute;
+     top: 240px;
+     left:550px;
+}
+
+.button{
+     height: 300px;
+     width: 300px;
+     background-color: #09A188;
+		 border-radius: 20px;
+		 cursor: pointer;
+}
+
+.buttonText{
+    font-size: 56px;
+    color: white;
+		text-decoration: none;
+}
+
+.logoutButton{
+	background-color: orange;
+	text-align: right;
+	height: 35px;
+	cursor: grab;
+}
+
+#separationLine{
+	width: 1px;
+  position: absolute;
+  top: 235px;
+  left: 500px;
+}

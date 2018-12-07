@@ -1,0 +1,230 @@
+
+body {
+	background-color: white;
+	margin: 0;
+	font-family: Helvetica, sans-serif; /* sans-serif browser default */
+}
+
+
+
+#topNavBar {
+	background-color: orange;
+	margin-bottom: 10px;
+	text-align: right;
+	height: 30px;
+}
+
+#topNavBar ul {
+
+	padding: 5px;
+	margin: 0px;
+
+}
+
+#topNavBar ul li {
+	list-style: none; /* No bullet points */
+	display: inline;
+	margin-right: 20px;
+
+}
+
+#topNavBar ul li a{
+   color: white;
+	 text-decoration:none
+   /* font-size: 30px; */
+}
+
+
+#text{
+       	position:absolute;
+       	top: 140px;
+       	left: 170px;
+       	font-size: 40px;
+}
+
+#text a{
+     color: black;
+}
+
+#leftBar{
+     position:absolute;
+     top: 240px;
+     left:90px;
+}
+
+.black{
+     color: black;
+}
+
+#building{
+
+
+}
+
+.button{
+		height: 25px;
+		width: 25px;
+		background-color: orange;
+		border-radius: 5px;
+		color: white;
+		cursor: pointer;
+}
+
+.leftTag{
+   margin-top: 10px;
+   background-color: burlywood;
+   width:auto;
+   float:left;
+   margin-right: 10px;
+
+
+}
+
+.rightTag{
+   margin-top: 10px;
+   background-color: burlywood;
+   width: auto;
+   float: left;
+   margin-right: 10px;
+}
+
+
+.tagText{
+   font-size : 12px;
+   margin-left: 3px;
+
+}
+.deleteButton{
+   border-radius: 50%;
+   background-color: burlywood;
+   border-color: burlywood;
+   color:white;
+   text-decoration:none;
+	 cursor: pointer;
+
+}
+
+#size{
+
+  margin-top: auto;
+  padding-top:60px;
+
+}
+
+.leftSize{
+   float: left;
+   margin-right: 10px
+   width: auto;
+}
+
+.rightSize{
+  float: left;
+  width: auto;
+
+}
+.search{
+  padding-top:40px;
+}
+
+
+
+#separationLine{
+      position: absolute;
+      top: 240px;
+      left:370px;
+}
+
+
+#rightBar{
+     position:absolute;
+     top: 250px;
+     left:400px;
+
+}
+
+.table{
+     margin-bottom: 20px;
+
+}
+.join{
+     border-radius: 25px;
+     background-color: orange;
+     padding: 5px;
+     color:black;
+     text-decoration:none;
+		 cursor: pointer;
+}
+
+.viewinfo{
+     border-radius: 25px;
+     background-color: lightgrey;
+     padding: 5px;
+     color:black;
+     text-decoration:none;
+		 cursor: pointer;
+
+}
+
+.ID{
+     border-radius:25px;
+     background-color: yellow;
+     padding: 5px;
+     color:black;
+     text-decoration:none;
+
+}
+
+.location{
+     background-color: tan;
+     border-radius: 25px;
+     margin-left: 10px;
+     padding: 5px;
+		 text-decoration:none;
+
+}
+
+.seat{
+     background-color: pink;
+     border-radius: 25px;
+     margin-left: 5px;
+     padding: 5px;
+		 text-decoration:none;
+}
+
+.time{
+      background-color: yellow;
+      border-radius: 25px;
+      margin-left: 5px;
+      padding: 5px;
+			text-decoration:none;
+ }
+
+ .course{
+      background-color: lightgreen;
+      border-radius: 25px;
+      margin-left: 5px;
+      padding: 5px;
+			text-decoration:none;
+
+ }
+
+  .back{
+      margin-top: 40px;
+      margin-left: 300px;
+ }
+
+.backButton{
+   background-color: darkred;
+   padding-left: 75px;
+   padding-right: 75px;
+   border-radius: 25px;
+	 cursor: pointer;
+
+}
+
+.backText{
+   color: white;
+   font-size: 40px;
+	 text-decoration:none;
+
+}

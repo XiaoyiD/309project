@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Create/search for a group</title>
+  <link rel="stylesheet" type="text/css" href="find.css">
+</head>
+
+  <body>
+
+    <div id="topNavBar">
+      <ul>
+        <li>
+          <a href="friends.html">FRIENDS |</a>
+        </li>
+        <li>
+          <a href="account_info.html">ACCOUNT |</a>
+        </li>
+        <li>
+          <a href="login.html">LOG OUT</a>
+        </li>
+
+      </ul>
+    </div>
+
+    <div id = "text">
+      <a>Find a Study Table</a>
+    </div>
+
+
+    <div id = "leftBar">
+
+      <div id = "building">
+        <p class = "black">Building</p>
+        <form id='BuildingAddForm'>
+          <input id='BuildingSearch' type="text">
+          <input type = "submit" class = "button" value = "+">
+        </form>
+
+
+        <div id = "tagList">
+
+        </div>
+
+      </div>
+
+
+      <div id = "size">
+        <p><br><br></p>
+
+        <p class = "black" >Size</p>
+
+        <div class = "sizes">
+          <div class = "leftSize">
+            <input id='size2' type="checkbox">
+            <a class = "sizeText">2 Seats</a>
+          </div>
+          <div class = "rightSize">
+            <input id='size6' type="checkbox">
+            <a class = "sizeText">6 Seats</a>
+          </div>
+        </div>
+
+        <div class = "sizes">
+          <div class = "leftSize">
+            <input id='size4' type="checkbox">
+            <a class = "sizeText"  >4 Seats</a>
+          </div>
+          <div class = "rightSize">
+            <input id='sizeMore' type="checkbox">
+            <a class = "sizeText"  >More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class = "search">
+        <p class = "black" >Start Time</p>
+        <input id='timeSearch' type="text">
+        <p class = "black"  >Estimated Duration</p>
+        <input id='durationSearch' type="text">
+        <p class = "black" >Subject</p>
+        <input id='subjectSearch' type="text">
+
+      </div>
+
+    </div>
+
+
+
+    <div id = "separationLine">
+      <hr width="0.5"  size="500" color = "grey">
+    </div>
+
+    <div id = "rightBar">
+      <div id = "tables">
+
+
+      </div>
+
+      <div class = "back">
+        <button class = "backButton" onclick="location.href = 'create.html';">
+          <a  class = "backText" href="create.html">BACK</a>
+        </button>
+      </div>
+
+    </div>
+
+
+
+    <script type="text/javascript" src="find.js"></script>
+  </body>
+</html>

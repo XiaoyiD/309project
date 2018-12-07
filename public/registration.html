@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title> Registration </title>
+    <link rel="stylesheet" type="text/css" href="registration.css">
+  </head>
+
+  <body>
+    <div id = "text">
+      <a href="">CREATE YOUR ACCOUNT</a>
+    </div>
+
+    <!-- <div id = "icon"> -->
+      <div id = "leftIcon">
+        <div class = "search">
+          <p class = "black">Email address</p>
+          <p class="comment">User must register with a valid utoronto email</p>
+          <input id='email' type="text">
+          <p class = "black">Name</p>
+          <input id='name' type="text">
+          <p class = "black">Password</p>
+          <p class="comment">Password length must between 8-15</p>
+          <input id='password' type="password">
+
+        </div>
+      </div>
+
+
+      <div id = "CreateIcon">
+        <button class = "createButton" onclick='createAccount()' id='add'>
+          <a class = "buttonText" onclick='createAccount()' >CREATE</a>
+        </button>
+      </div>
+
+      <div id = "CancelIcon">
+        <button class = "bottomButton" onclick='window.location = "/login"'>
+          <a class = "buttonText">CANCEL</a>
+        </button>
+      </div>
+
+  </body>
+  <script type="text/javascript" src="/registration.js"></script>
+</html>

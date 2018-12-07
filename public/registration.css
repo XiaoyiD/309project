@@ -1,0 +1,104 @@
+#text{
+     	position:absolute;
+     	top: 140px;
+     	left: 200px;
+     	font-size: 38px;
+}
+
+#text a{
+     color: black;
+     text-decoration:none;
+}
+
+
+#leftIcon{
+     position:absolute;
+     top: 200px;
+     left: 300px;
+}
+
+#rightIcon{
+     position:absolute;
+     top: 200px;
+     left: 680px;
+}
+
+#CreateIcon {
+  position:absolute;
+  top: 600px;
+  left: 280px;
+}
+
+#CancelIcon {
+  position:absolute;
+  top: 600px;
+  left: 680px;
+}
+
+.comment{
+  font-size: 12px;
+  margin-top: -10px;
+}
+
+.search{
+  padding-top:20px;
+}
+
+/* .searchBar {
+     position: absolute;
+     top: 355px;
+     left: 575px;
+} */
+
+/* .searchBar input {
+     height: 30px;
+     width: 50px;
+} */
+.search input[type=text] {
+    float: top;
+    /* padding: 6px; */
+    /* border: none; */
+    margin-top: -12px;
+    font-size: 20px;
+    width: 280px;
+}
+
+.button{
+  border-radius: 6px;
+  height: 25px;
+  width: 25px;
+  background-color: orange;
+  border: none;
+  font-size: 20px;
+  margin-top: 16px;
+}
+.plusSign{
+
+    color: white;
+    text-decoration: none
+}
+
+
+.bottomButton{
+   background-color: #cc0000;
+   width: 280px;
+   height: 38px;
+   padding-left: 75px;
+   padding-right: 75px;
+   cursor: pointer;
+}
+
+.createButton{
+   background-color: #00b3b3;
+   width: 280px;
+   height: 38px;
+   padding-left: 75px;
+   padding-right: 75px;
+   cursor: pointer;
+}
+
+.buttonText{
+   color: white;
+   font-size: 18px;
+   text-decoration:none
+}

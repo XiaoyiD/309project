@@ -1,0 +1,85 @@
+#text{
+     	position:absolute;
+     	top: 140px;
+     	left: 200px;
+     	font-size: 38px;
+}
+
+#text a{
+     color: black;
+}
+
+
+#leftIcon{
+     position:absolute;
+     top: 200px;
+     left: 200px;
+}
+
+#rightIcon{
+     position:absolute;
+     top: 200px;
+     left: 680px;
+}
+
+#CreateIcon {
+  position:absolute;
+  top: 600px;
+  left: 280px;
+}
+
+#CancelIcon {
+  position:absolute;
+  top: 600px;
+  left: 680px;
+}
+
+.search{
+  padding-top:20px;
+}
+
+.search input[type=text] {
+    float: top;
+    /* padding: 6px; */
+    /* border: none; */
+    margin-top: -12px;
+    font-size: 20px;
+    width: 280px;
+}
+
+.button{
+  border-radius: 6px;
+  height: 25px;
+  width: 25px;
+  background-color: orange;
+  border: none;
+  font-size: 20px;
+  margin-top: 16px;
+}
+
+.plusSign{
+    color: white;
+    text-decoration: none
+}
+
+.saveButton{
+   background-color: #00b3b3;
+   width: 280px;
+   height: 35px;
+   text-align: center;
+   cursor: pointer;
+}
+
+.bottomButton{
+   background-color: #cc0000;
+   width: 280px;
+   height: 35px;
+   text-align: center;
+   cursor: pointer;
+}
+
+.buttonText{
+   color: white;
+   font-size: 18px;
+   text-decoration:none
+}

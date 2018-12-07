@@ -1,0 +1,35 @@
+# team15 phase1.txt
+
+====================================================
+
+How to get start?
+
+Start with index.html
+
+index.html: the start page of our web, which let user choose their emoji for fun, then jump to login page(login.html) after clicking.
+
+Next, goes to login page(login.html)
+
+====================================================
+How to login?
+
+ - admin: 
+	- username: admin123 
+	- password: nopassword
+	- if the login user using the username and password above, the web will jump to 	admin page, and administrator can delete users, or delete study tables, or both.
+	- admin can go to regular user page by clicking ‘HOME’ in the top navigate bar.
+
+
+ - regular user: regardless whatever user type in ‘username’ and ‘password’ box, or just click the login button, the web will jump to the main user page(create.html), to either create a new table or find an exist table.
+
+====================================================
+How to start with study table?
+
+- create a new table(new_table.html): user will be able to create a new table by filling the input box
+
+- Find an vacant seat(find.html): user can filter table by adding criteria with table location, studying time, course work on, and available seats. Joining a table by clicking ‘Join the seat’. 
+
+====================================================
+How to add or delete a friend:
+
+On the top navigate bar, there is a ‘FRIENDS’ button, simple click this will jump to friend managing page(friend.html), then user can either add a friend by id(require server call to check this user exist or not), or delete an exist friend.

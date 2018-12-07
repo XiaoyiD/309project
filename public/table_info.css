@@ -1,0 +1,92 @@
+body {
+	background-color: lightgrey;
+	margin: 0;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 14;
+}
+
+#topNavBar {
+	background-color: orange;
+	margin-bottom: 10px;
+	text-align: right;
+    height: 35px;
+}
+
+#topNavBar ul {
+
+	padding: 5px;
+	margin: 0px;
+
+}
+
+#topNavBar ul li {
+	list-style: none; /* No bullet points */
+	display: inline;
+	margin-right: 20px;
+
+}
+
+#topNavBar ul li a{
+   color: white;
+   font-size: 20px;
+	 text-decoration:none
+}
+
+#tableInfo{
+	position: absolute;
+	top: 10%;
+	left: 15%;
+	width: 400px;
+
+}
+
+#tableInfo p {
+	font-weight: bold;
+}
+
+#tableInfo span {
+	font-weight: normal;
+	color: black;
+}
+
+.centerAligned{
+	text-align: center;
+	color: brown;
+}
+
+
+.userhere {
+	font-weight: normal;
+  /* margin-left: 100px;
+  margin-top: 80px; */
+	color: green;
+}
+
+.user {
+	font-weight: normal;
+  /* margin-left: 100px;
+  margin-top: 80px; */
+	color: green;
+}
+#rightButtons {
+	position: absolute;
+	bottom: 30%;
+	right: 15%;
+}
+
+.buttons{
+	border-radius: 20px;
+	background-color: teal;
+	width: 300px;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-color: transparent;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.buttonsA {
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}

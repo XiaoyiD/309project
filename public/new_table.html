@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title> Create Table </title>
+    <link rel="stylesheet" type="text/css" href="new_table.css">
+  </head>
+
+  <body>
+
+    <div id="topNavBar">
+      <ul>
+        <li>
+          <a href="friends.html">FRIENDS | </a>
+        </li>
+        <li>
+          <a href="account_info.html">ACCOUNT</a>
+        </li>
+      </ul>
+    </div>
+
+    <div id = "text">
+      <a href="">CREATE A NEW TABLE</a>
+    </div>
+
+    <div class = "leftBar">
+      <div id = "title">
+        <a>LOCATION</a>
+      </div>
+      <div class = "search">
+        <p class = "black">Building</p>
+        <input id='location' type="text">
+        <p class = "black">Floor / Room Number</p>
+        <input id='floor' type="text">
+        <p class = "black">Other Description</p>
+        <input id='description' type="text">
+      </div>
+    </div>
+
+    <div id = "leftseparationLine">
+      <hr size="280" color = "grey">
+    </div>
+
+    <div class = "middleBar">
+      <div id = "title">
+        <a>TIME & SIZE</a>
+      </div>
+
+      <div class = "search">
+        <p class = "black">Size (2 people / 3-4 people / more)</p>
+        <input id='numberOfSeats' type="text">
+        <p class = "black">Start Time(type only integer)</p>
+        <input id='start' type="text">
+        <p class = "black">End Time(type only integer)</p>
+        <input id='end' type="text">
+      </div>
+    </div>
+
+    <div id = "rightseparationLine">
+      <hr size="280" color = "grey">
+    </div>
+
+    <div class = "rightBar">
+      <div id = "title">
+        <a>SETTING</a>
+      </div>
+      <div class = "search">
+        <p class = "black">Course Code</p>
+        <input id='subject' type="text">
+      </div>
+    </div>>
+
+
+
+      <!-- <button class = "createButton" onclick="location.href = 'find.html';">
+        <a class = "buttonText" href="find.html">CREATE</a>
+      </button> -->
+    </div>
+    <div id = "CreateIcon">
+      <button onclick='createTable()' class = "createButton">
+        <a class = "buttonText" >Create</a>
+      </button>
+    </div>
+
+    <div id = "CancelIcon">
+      <button class = "bottomButton" onclick="location.href = 'create.html';">
+        <a class = "buttonText" href="create.html">CANCEL</a>
+      </button>
+    </div>
+
+  <script type="text/javascript" src="new_table.js"></script>
+  </body>
+
+</html>

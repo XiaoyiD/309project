@@ -1,0 +1,83 @@
+Our project starting from the index.html page.
+link: https://infinite-reef-36225.herokuapp.com
+Main Page 
+	In this page, you can interact with—
+	1. 5 clickable emoji buttons, by clicking any one of them you can go to the login page.
+
+Login Page
+    - admin:
+	- username: admin123
+	- password: nopassword
+	- if the login user using the username and password above, the web will jump to 	admin page, and administrator can delete users, or delete study tables, or both.
+	- admin can go to regular user page by clicking ‘HOME’ in the top navigate bar.
+
+	In this page, you can interact with —
+	1. Two input boxes for email and password
+	2. One login button. If user has input the valid pair of email and password in those two input boxes above, by clicking the login button user will go to the operation page.
+	3. One create-new-account button. If you are a new user, or do not have a valid pair of email and password, by clicking the create-new-account button you will go to the create-account page.
+
+Create Account Page 
+	In this page, you can interact with—
+	1. Three input boxes, for user to input their email-address, name, and password. (Please make sure that your password has valid length)
+	2. One create button, by clicking it you will creating your own account and back to the login page.
+	3. One cancel button, by clicking it you will not creating any account and back to the login page.
+
+Operation Page
+	In this page, you can interact with—
+	1. Two buttons on the top bar.
+		1) One account button, by clicking it you will go to your own account page.
+		2) One logout button, by clicking it you will log out you account and back to the login page.
+	2. Two green buttons on the middle of the page
+		1) One create-a-new-table button, by clicking it you will go to the table creating page.
+		2) One find-an-vacant-seat button, by clicking it you will go to the find table page.
+
+Table Creating Page
+	In this page, you can interact with—
+	1. Three input boxes in Column Location
+		1) One building input box for input the building name (for example: BA / RB / SS)
+		2) One floor/room number input box for input of specific locations (for example: 14 / 2200 / 3200)
+		3) One other description input box for further information that the creator want to add (For example: Working on problem set 2. / Study for the final exam. )
+	2. Three input boxes in Column Time & Size 
+		1) One input box for input size of the table that user want to be (for example: 2 / 4 / 6 / 8)
+		2) One input box for input the estimated starting time (for example: 12:00 / 14:30)
+		3) One input box for input the estimated ending time (for example: 15:00 / 19:00)
+	3. One input box in  Column Others
+		1) One input box for input the course code (for example: CSC309 / CIN301)
+	4. Two Buttons on the bottom
+		1) One create button. If you have all valid information in the input boxes above, by clicking it,  you will creating a new table and back to the operation page.
+		2) One cancel button. By clicking it,  you will not creating a new table and back to the operation page.
+
+Find Table Page
+	In this page, you can interact with—
+	1. Filters on the left side 
+		1) One input box for inputing the buildings in which you wish the table is. (For example: BA / RB / SS)  
+		2) Four check boxes for deciding the group size you wish the table is (User can choose multiple choices at the same time)
+		3) One input box for inputing your estimated start time (for example: 12:00, 5:00)
+		4) One input box for inputing your estimated study duration (for example: 4 / 7)
+		5) One input box for inputing what subject you wish your study subject would be (for example: CSC309 / EAS243) 
+	2. Searched results on the right side
+		In this part you will see the full list of tables that fit your conditions.
+		1) One Join-The-Seat button, by clicking the button you will join in the table, and go to the table info page.
+		2) One Info button, by clicking the button you will go to the table info page.
+	3. One back button, by clicking it you will go back to the operation page.
+
+Table Info Page
+	1. One join button by clicking it you will have a reminder on the page and said “You have joined this course”.
+		After the join button is clicked, there will be a leave-this-table button just below the reminder.
+		1) One leave-this-table button, by clicking it you will leave the table, and go to the operation page.
+	2. One leave button by clicking it you will leave the page and back to the find table page.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

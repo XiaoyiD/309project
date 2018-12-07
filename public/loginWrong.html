@@ -1,0 +1,51 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>LOGIN Page</title>
+    <link rel="stylesheet" type="text/css" href="login.css" />
+    <!-- <script src="main.js"></script> -->
+</head>
+<body>
+    <div id="leftDiv">
+        <h2> Today's Motto</h2>
+        <p id="motto">The important thing in life is to have a great aim, and the determination to attain it.</p>
+        <p id="mottonName" class="rightAligned">--Johann Wolfgang von Goethe</p>
+    </div>
+
+    <div id="rightDiv">
+        <p>**Invalid email/password**</p>
+        <form id="loginForm" action="/users/loginWrong" method="post">
+            <input id="usrname" name="email" class="inputs" type="text" placeholder="Username/email">
+            <br>
+            <input id="pswd" name="password" class="inputs" type="password" placeholder="Password">
+            <a href=""> Forgot</a>
+            <br>
+            <input id = "loginButton" type="submit" class="buttons" value="LOGIN">
+        </form>
+
+        <!-- <a class="buttonA" href="">
+            <button id="loginButton" class="buttons">LOGIN</button>
+        </a> -->
+        <!-- <input type="submit" class="buttons" value="LOGIN"> -->
+
+        <br>
+        <div id="separationLine">
+            <hr>
+        </div>
+
+        <p class="centerAligned">Do not have an Account?</p>
+
+        <a class="buttonA" href="registration.html">
+            <button id="createButton" class="buttons">CREATE AN ACCOUNT</button>
+        </a>
+
+        <br>
+
+        <a class="buttonA" href="create.html">
+            <button id="visitorButton" class="buttons">LOGIN AS VISITOR</button>
+        </a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Admin</title>
+  <link rel="stylesheet" type="text/css" href="admin.css">
+</head>
+
+  <body>
+
+    <div id="topNavBar">
+      <ul>
+        <li>
+          <a id = "home" href="create.html"> HOME | </a>
+        </li>
+        <li>
+          <a href="account_info.html">ACCOUNT</a>
+        </li>
+
+      </ul>
+    </div>
+
+    <div id="accounts">
+      <h2> User List </h2>
+        <div id = "accountsList">
+            <div id="account1" class="account">
+                <input type="checkbox" class="checkbox1">
+                <a class = "sizeText" >Mengze Liu</a>
+            </div>
+            <br>
+            <div id="account2" class="account">
+                <input type="checkbox" class="checkbox1">
+                <a class = "sizeText" >XiaoyiD</a>
+            </div>
+            <br>
+            <div id="account3" class="account">
+                <input type="checkbox" class="checkbox1">
+                <a class = "sizeText" >Rui Luo</a>
+            </div>
+            <br>
+            <div id="account4" class="account">
+                <input type="checkbox" class="checkbox1">
+                <a class = "sizeText" >Zty</a>
+            </div>
+            <br>
+        </div>
+        <button id = "deleteButton1" >Delete</button>
+    </div>
+
+    <div id="tables">
+      <h2> Table List </h2>
+      <div id = "tablesList">
+          <div id="table1" class="table">
+              <input type="checkbox" class="checkbox2">
+              <a class = "sizeText" >table1</a>
+          </div>
+          <br>
+          <div id="table2" class="table">
+              <input type="checkbox" class="checkbox2">
+              <a class = "sizeText" >table2</a>
+          </div>
+          <br>
+          <div id="table3" class="table">
+              <input type="checkbox" class="checkbox2">
+              <a class = "sizeText" >table3</a>
+          </div>
+          <br>
+          <div id="table4" class="table">
+              <input type="checkbox" class="checkbox2">
+              <a class = "sizeText" >table4</a>
+          </div>
+          <br>
+      </div>
+      <button id = "deleteButton2" >Delete</button>
+    </div>
+
+
+    <div id = "CreateIcon">
+    <button class = "saveButton" onclick="location.href = 'create.html';">
+        <a class = "buttonText" href="create.html">SAVE CHANGES</a>
+    </button>
+    </div>
+
+    <div id = "CancelIcon">
+    <button class = "bottomButton" onclick="location.href = 'create.html';">
+        <a class = "buttonText" href="create.html">BACK</a>
+    </button>
+    </div>
+
+    <script type="text/javascript" src="admin.js"></script>
+  </body>
+</html>
