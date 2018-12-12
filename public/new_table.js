@@ -27,7 +27,7 @@ function createTable() {
             start: parseInt(document.querySelector('#start').value),
             end: parseInt(document.querySelector('#end').value),
             subject: document.querySelector('#subject').value,
-            users:[json.name],
+            users:[],
         }
         // Create our request constructor with all the parameters we need
         const request = new Request(url, {
@@ -41,8 +41,34 @@ function createTable() {
         // Fetch AJAX call
         fetch(request)
         .then(function(res) {
-        }).catch((error) => {
-            console.log(error)
+            return res.json()
+        }).then((json)=>{
+            const url2 = '/table';
+            let data2 = {
+                id: json._id
+            }
+            const request2 = new Request(url2, {
+                method: 'post',
+                body: JSON.stringify(data2),
+                headers: {
+                    'Accept': 'application/json, text/plain, */*',
+                    'Content-Type': 'application/json'
+                },
+            });
+//            setTimeout(function(){
+//
+//                document.location.href = 'joinedTable.html';
+//            },400);
+            fetch(request2)
+            .then(function(res2) {
+                setTimeout(function(){
+
+                    document.location.href = 'joinedTable.html';
+                },300);
+            }).catch((error) => {
+                console.log(error)
+            })
+
         })
 
 
@@ -55,5 +81,4 @@ function createTable() {
     })
 
 
-    window.location = "/create";
 }  

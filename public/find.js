@@ -60,7 +60,7 @@ setTimeout(function(){
 
     }
     refreshTables()
-  },50);
+  },100);
 
 
 
@@ -332,7 +332,7 @@ function addTable(i){
 	join.className = 'join'
 	join.appendChild(document.createTextNode('JOIN THE SEAT'))
 	join.addEventListener("click", function() {
-	    const tableIndex = parseInt(join.nextElementSibling.nextElementSibling.children[1].innerText);
+	    const tableIndex = parseInt(join.nextElementSibling.children[1].innerText);
 //        const userUrl = '/userInfo';
 //        fetch(userUrl)
 //        .then((res) => {
@@ -419,7 +419,6 @@ function addTable(i){
 
 
 	table.appendChild(join);
-	table.appendChild(info);
 	table.appendChild(ID);
 	table.appendChild(tableLocation);
 	table.appendChild(seat);

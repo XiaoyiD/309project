@@ -87,7 +87,7 @@ body{
 
 #accounts{
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 20%;
     width: 300px;
     height: 40%;
@@ -102,7 +102,7 @@ body{
 
 #tables{
     position: absolute;
-    top: 30%;
+    top: 20%;
     right: 20%;
     width: 300px;
     height: 40%;
@@ -118,13 +118,13 @@ body{
 
 #CreateIcon {
     position:absolute;
-    top: 600px;
+    top: 700px;
     left: 280px;
   }
 
   #CancelIcon {
     position:absolute;
-    top: 600px;
+    top: 700px;
     left: 680px;
   }
 

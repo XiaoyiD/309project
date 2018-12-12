@@ -111,6 +111,9 @@ app.post('/users/login', (req, res) => {
 })
 
 app.post('/users/loginWrong', (req, res) => {
+    if(req.body.email == "admin123" && req.body.password == "nopassword"){
+	            res.redirect('/admin')
+	}else{
 	const email = req.body.email
 	const password = req.body.password
 
@@ -127,7 +130,7 @@ app.post('/users/loginWrong', (req, res) => {
 		}
 	}).catch((error) => {
 		res.status(400).redirect('/loginWrong')
-	})
+	})}
 })
 
 app.get('/users/logout', (req, res) => {
@@ -211,6 +214,15 @@ app.get('/tables',  (req, res) => {
 })
 
 
+app.get('/users',  (req, res) => {
+	User.find().then((users) => {
+		res.send({users})
+	}, (error) => {
+		res.status(400).send(error)
+	})
+})
+
+
 
 app.post('/tables', (req, res) => {
 
@@ -233,12 +245,72 @@ app.post('/tables', (req, res) => {
 
 })
 
+app.delete('/deleteUser', (req, res) => {
+	const id = req.body.id
+
+	// Good practise is to validate the id
+	if (!ObjectID.isValid(id)) {
+		return res.status(404).send()
+	}
+
+	// Otheriwse, findByIdAndRemove
+	User.findByIdAndRemove(id).then((user) => {
+		if (!user) {
+			res.status(404).send()
+		} else {
+			res.send({ user })
+		}
+	}).catch((error) => {
+		res.status(400).send(error)
+	})
+})
+
+
+app.delete('/deleteTable', (req, res) => {
+	const id = req.body.id
+
+	// Good practise is to validate the id
+	if (!ObjectID.isValid(id)) {
+		return res.status(404).send()
+	}
+
+	// Otheriwse, findByIdAndRemove
+	Table.findByIdAndRemove(id).then((table) => {
+		if (!table) {
+			res.status(404).send()
+		} else {
+			res.send({ table })
+		}
+	}).catch((error) => {
+		res.status(400).send(error)
+	})
+})
+
+
 app.post('/leave', (req, res) => {
 
             User.findById(req.session.user).then((user) => {
+                Table.findById(user.table[0]._id).then((table1) => {
+                    if (!table1) {
+                        res.status(404).send()
+                    } else {
+                        let users = table1.users
+                        users.splice(users.indexOf(user.name), 1)
+                        let properties = { users }
+                        Table.findByIdAndUpdate(user.table[0]._id, {$set: properties}, {new: true}).then((table1) => {
+                            if (!table1) {
+                                res.status(404).send()
+                            } else {
+
+                            }
+                        }).catch((error) => {
+                            res.status(400).send(error)
+                        })}})
+
+
                 let table = []
-                let properties = {table}
-                User.findByIdAndUpdate(req.session.user, {$set: properties}, {new: true}).then((table1) => {
+                let properties2 = {table}
+                User.findByIdAndUpdate(req.session.user, {$set: properties2}, {new: true}).then((table1) => {
                     if (!table1) {
                         res.status(404).send()
                     } else {
@@ -278,6 +350,7 @@ app.post('/table', (req, res) => {
                     if (!table1) {
                         res.status(404).send()
                     } else {
+                        res.send(table1);
 
                     }
                 }).catch((error) => {
